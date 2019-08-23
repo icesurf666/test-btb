@@ -5,14 +5,123 @@
 @media(max-width: 992px)
 	.container
 		width: 720px
-		
+	.header
+		&__title
+			font-size: 39px
+		&__logo-text, &__version
+			font-size: 14px
+	.menu
+		&__items
+			font-size: 14px
+		&__item
+			display: flex
+			justify-content: center
+			width: 18%
+			&:nth-child(5)
+				margin-right: 8px
+		&__input
+			width: 100%
+	.footer
+		&__block
+			width: 24%
+
 @media(max-width: 768px)
 	.container
 		width: 540px
+	.menu
+		display: none
+		&__input
+			width: 50%
+	.mobile
+		display: block
+	.menu-mobile
+		display: block
+		z-index: 9999
+		position: absolute
+		top: 24px
+		right: 24px
+		width: 23px
+		height: 23px
+		background: url(../img/bars-solid.svg)
 
+	.menu-mobile__close
+		position: absolute
+		top: 24px
+		right: 21px
+		width: 23px
+		height: 23px
+		background: url(../img/times-solid.svg) no-repeat
+	.header
+		&__version
+			display: none
+		&__title
+			font-size: 33px
+			line-height: 49px
+	.about
+		&__left
+			&-title
+				font-size: 30px
+			&-desc
+				font-size: 13px
+		&__specials
+			&-title
+				font-size: 30px
+			&-desc
+				font-size: 13px
+	.footer
+		&__block
+			&-adress, &-title, &-number, &-subtitle, &-email_wrap, &-btn
+				font-size: 13px
+			&-btn
+				width: 100%
+		&__end
+			font-size: 14px
 @media(max-width: 576px)
 	.container
 		width: 420px
+	.header
+		height: 100vh
+		&__wrapper
+			justify-content: center
+		&__title
+			margin-top: 134px
+			line-height: 30px
+			font-size: 24px
+		&__logo
+			flex-flow: wrap column
+		&__btn
+			margin-top: 120px
+			padding-bottom: 0
+	.about
+		height: auto
+		&__map
+			&-title
+				font-size: 30px
+		&__items
+			flex-flow: wrap column
+		&__left, &__right
+			width: 100%
+		&__left
+			&-btn
+				margin: 0 auto
+				margin-top: 20px
+				margin-bottom: 20px
+	.map__block
+		left: 19%
+		top: 79px
+		width: 67%
+		height: 301px
+	.footer
+		margin-top: 50px
+		&__blocks
+			flex-flow: wrap column
+		&__block
+			width: 100%
+			text-align: center
+			&-btn
+				width: 60%
+				margin: 0 auto
+				margin-top: 10px
 
 @media(max-width: 455px)
 	.container

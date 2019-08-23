@@ -110,6 +110,7 @@ body
 			font-size: 14px
 			font-weight: 500
 
+
 .about
 	height: 1243px
 	background-color: #d6e8f6
@@ -119,6 +120,7 @@ body
 		display: flex
 		justify-content: space-between
 	&__left
+		width: 49%
 		padding-top: 56px
 		&-title
 			color: #00334c
@@ -126,7 +128,7 @@ body
 			font-weight: 300
 		&-desc
 			margin-top: 39px
-			width: 529px
+			width: 95%
 			color: #00334c
 			font-size: 16px
 			font-weight: 400
@@ -147,7 +149,7 @@ body
 			border-radius: 22px
 			background-color: #5986af
 	&__right
-		width: 600px
+		width: 51%
 		height: 380px
 		background-color: #f7f2f9
 	&__specials
@@ -158,24 +160,24 @@ body
 			font-weight: 300
 		&-desc
 			margin-top: 33px
-			width: 890px
+			width: 76%
 			color: #00334c
 			font-size: 16px
 			font-weight: 400
 			line-height: 24px
 		&-vect
 			margin-top: 26px
-			width: 1170px
+			width: 100%
 			height: 400px
 			background-color: #f7f2f9
 	&__map
 		margin-top: 100px
 		&-title
-			margin-bottom: 41px
 			color: #0f1e33
 			font-size: 36px
 			font-weight: 300
 .map
+	margin-top: 41px
 	position: relative
 	&__block
 		position: absolute
@@ -235,7 +237,23 @@ hr
 	color: #9eabb8
 	opacity: 0.5
 
-
+.mobile, .menu-mobile, .menu-m
+	display: none
+.menu-m
+	position: fixed
+	z-index: 9999
+	left: 0
+	background: white
+	height: 435px
+	width: 100%
+	padding-top: 100px
+.menu-m__item
+	margin-top: 8px
+	text-align: center
+.menu-m__link
+	font-size: 30px
+	color: #465c6e
+	text-decoration: none
 
 // Адаптив //
 @import "media"
