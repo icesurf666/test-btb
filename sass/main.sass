@@ -1,0 +1,241 @@
+@import "vars"
+
+// Шрифты //
+@import "fonts"
+
+// База //
+html, body
+	width: 100%
+	height: 100%
+h1, h2, h3, h4, h5, h6, ul, p
+	padding: 0
+	margin: 0
+ul
+	list-style: none
+\:focus, \:active
+	outline: 0 !important
+a, a:focus, a:active, a:hover
+	text-decoration: none !important
+*
+	box-sizing: border-box
+
+body
+	font-family: "Open Sans"
+	font-weight: 400
+	font-size: 16px
+
+// Стили //
+.container
+	width: 1169px
+	margin: 0 auto
+.header
+	height: 484px
+	background-color: #ffffff
+	background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 22%, #d6e8f6 81%, #d6e8f6 100%)
+	&__wrapper
+		padding-top: 21px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+		align-items: center
+		flex-direction: row
+		&-text
+			margin-left: 49px
+			color: #465c6e
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+	&__version
+		color: #465c6e
+		&-img
+			margin-right: 10px
+	&__title
+		margin-top: 109px
+		text-align: center
+		color: #00334c
+		font-size: 52px
+		font-weight: 300
+		line-height: 62px
+	&__btn
+		margin-top: 41px
+		padding-bottom: 105px
+		display: flex
+		justify-content: center
+
+		&-link
+			display: flex
+			align-items: center
+			width: 210px
+			height: 44px
+			padding-left: 29px
+			border-radius: 22px
+			background-color: #5986af
+			background-image: url("../img/right-arrow.png")
+			background-position: right 26px top 53%
+			background-repeat: no-repeat
+			color: #ffffff
+			font-size: 14px
+			font-weight: 600
+			line-height: 21px
+
+.menu
+	padding-top: 15px
+	padding-bottom: 15px
+	&__items
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: #465c6e
+		font-size: 16px
+		font-weight: 400
+	&__item
+		&-link
+			color: #465c6e
+
+	&__input
+		position: relative
+		padding-left: 41px
+		font-size: 14px
+		width: 213px
+		height: 40px
+		border-radius: 20px
+		border: 1px solid #e6e9eb
+		background-image: url("../img/magnifying-glass.png")
+		background-position: left 13px top 50%
+		background-repeat: no-repeat
+		&::placeholder
+			color: #9eabb8
+			font-size: 14px
+			font-weight: 500
+
+.about
+	height: 1243px
+	background-color: #d6e8f6
+	background-image: linear-gradient(to bottom, #d6e8f6 0%, #d6e8f6 60%, #ffffff 86%, #ffffff 100%)
+	&__items
+		padding-top: 73px
+		display: flex
+		justify-content: space-between
+	&__left
+		padding-top: 56px
+		&-title
+			color: #00334c
+			font-size: 36px
+			font-weight: 300
+		&-desc
+			margin-top: 39px
+			width: 529px
+			color: #00334c
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+		&-btn
+			margin-top: 46px
+			display: flex
+			padding-left: 36px
+			align-items: center
+			background-image: url("../img/right-arrow.png")
+			background-position: right 36px top 53%
+			background-repeat: no-repeat
+			width: 180px
+			height: 44px
+			color: #ffffff
+			font-size: 14px
+			font-weight: 400
+			border-radius: 22px
+			background-color: #5986af
+	&__right
+		width: 600px
+		height: 380px
+		background-color: #f7f2f9
+	&__specials
+		margin-top: 81px
+		&-title
+			color: #00334c
+			font-size: 36px
+			font-weight: 300
+		&-desc
+			margin-top: 33px
+			width: 890px
+			color: #00334c
+			font-size: 16px
+			font-weight: 400
+			line-height: 24px
+		&-vect
+			margin-top: 26px
+			width: 1170px
+			height: 400px
+			background-color: #f7f2f9
+	&__map
+		margin-top: 100px
+		&-title
+			margin-bottom: 41px
+			color: #0f1e33
+			font-size: 36px
+			font-weight: 300
+.map
+	position: relative
+	&__block
+		position: absolute
+		width: 500px
+		height: 450px
+		background-color: #ffffff
+		opacity: 0.9
+		z-index: 999
+
+#map
+	display: block
+	width: 100%
+	height: 500px
+.ymaps-2-1-74-ground-pane
+	filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale")
+	-webkit-filter: grayscale(100%)
+	canvas
+		opacity: .6
+.footer
+	margin-top: 61px
+	&__blocks
+		display: flex
+		justify-content: space-between
+	&__block
+		&-title, &-subtitle
+			color: #9eabb8
+			font-size: 14px
+			font-weight: 400
+		&-subtitle
+			margin-top: 16px
+		&-email
+			color: #465c6e
+		&-adress, &-email_wrap, &-number
+			margin-top: 13px
+			font-size: 14px
+			color: #465c6e
+		&-btn
+			margin-top: 16px
+			margin-bottom: 35px
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 158px
+			height: 38px
+			color: #ffffff
+			font-size: 14px
+			font-weight: 400
+			border-radius: 22px
+			background-color: #5986af
+	&__end
+		margin-top: 7px
+		margin-bottom: 10px
+		text-align: center
+		position: relative
+		color: #9eabb8
+hr
+	color: #9eabb8
+	opacity: 0.5
+
+
+
+// Адаптив //
+@import "media"
