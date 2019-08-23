@@ -329,6 +329,7 @@ hr {
 .menu-m {
   position: fixed;
   z-index: 9999;
+  left: 0;
   background: white;
   height: 435px;
   width: 100%;
